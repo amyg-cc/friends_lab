@@ -88,7 +88,6 @@ class TestFriends(unittest.TestCase):
     # (e.g. the function add_friend(self.person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
     # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
 
-    @unittest.skip("delete this line to run the test")
     def test_add_friend(self):
         add_friend(self.person2, "Scrappy-Doo")
         self.assertEqual(2, len(self.person2["friends"]))

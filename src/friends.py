@@ -10,3 +10,6 @@ def likes_to_eat(person, food):
         if food in person["favourites"]["snacks"]:
             snack_match = True
     return snack_match
+
+def add_friend(person, new_friend):
+    person["friends"].append(new_friend)
