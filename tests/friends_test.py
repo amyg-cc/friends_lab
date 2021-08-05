@@ -95,7 +95,6 @@ class TestFriends(unittest.TestCase):
     # 5. For a given person, remove a specific name from their list of friends
     # (hint: Same as above, testing for the length of the array should be sufficient)
 
-    @unittest.skip("delete this line to run the test")
     def test_remove_friend(self):
         add_friend(self.person2, "Scrappy-Doo")
         remove_friend(self.person2, "Fred")
