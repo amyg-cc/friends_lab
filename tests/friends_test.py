@@ -139,10 +139,9 @@ class TestFriends(unittest.TestCase):
     # 11. Find all of the people who enjoy a particular TV show
     # (hint: return a list. We don't know how many people we will need to return)
 
-    @unittest.skip("delete this line to run the test")
     def test_find_people_who_like_tv_show(self):
         self.assertEqual([self.person4, self.person5],
-                         find_people_who_like_tv_show("X-Files", self.people))
+            find_people_who_like_tv_show("X-Files", self.people))
 
     # 12. Find the oldest person
     # (hint: Use a loop to compare each person's age to the highest age that you have seen so far)

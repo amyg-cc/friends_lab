@@ -49,3 +49,10 @@ def find_mutual_friends(person_1, person_2):
         if friend in person_2["friends"]:
             mutual_mates.append(friend)
     return mutual_mates
+
+def find_people_who_like_tv_show(tv_show, list):
+    like_tv_show = []
+    for person in list:
+        if person["favourites"]["tv_show"] == tv_show:
+            like_tv_show.append(person)
+    return like_tv_show
