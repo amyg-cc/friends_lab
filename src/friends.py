@@ -64,3 +64,10 @@ def find_oldest_person(list):
         if person["age"] > oldest_person["age"]:
             oldest_person = person
     return oldest_person
+
+def all_favourite_tv_shows(list):
+    everyones_fave_shows = []
+    for person in list:
+        if person["favourites"]["tv_show"] not in everyones_fave_shows:
+            everyones_fave_shows.append(person["favourites"]["tv_show"])
+    return everyones_fave_shows

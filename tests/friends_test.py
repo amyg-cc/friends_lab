@@ -151,7 +151,6 @@ class TestFriends(unittest.TestCase):
 
     # 13. Create a list of everyone's favourite TV shows without duplicates
 
-    @unittest.skip("delete this line to run the test")
     def test_all_favourite_tv_shows(self):
         expected = ["friends", "Baywatch", "Pokemon", "X-Files"]
         self.assertEqual(expected, all_favourite_tv_shows(self.people))
