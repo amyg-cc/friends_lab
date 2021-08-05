@@ -26,4 +26,12 @@ def total_money(list):
 
 def lend_money(lender, lendee, amount):
     lendee["monies"] += amount
-    lender["monies"] = lender["monies"] - amount
+    lender["monies"] -= amount
+
+def all_favourite_foods(list):
+    favourites_list = []
+
+    for person in list:
+        for snack in person["favourites"]["snacks"]:
+            favourites_list.append(snack)
+    return favourites_list
