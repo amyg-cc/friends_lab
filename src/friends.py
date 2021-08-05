@@ -56,3 +56,11 @@ def find_people_who_like_tv_show(tv_show, list):
         if person["favourites"]["tv_show"] == tv_show:
             like_tv_show.append(person)
     return like_tv_show
+
+def find_oldest_person(list):
+    oldest_person = list[0]
+    
+    for person in list:
+        if person["age"] > oldest_person["age"]:
+            oldest_person = person
+    return oldest_person

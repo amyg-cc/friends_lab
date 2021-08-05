@@ -146,7 +146,6 @@ class TestFriends(unittest.TestCase):
     # 12. Find the oldest person
     # (hint: Use a loop to compare each person's age to the highest age that you have seen so far)
 
-    @unittest.skip("delete this line to run the test")
     def test_find_oldest_person(self):
         self.assertEqual(self.person5, find_oldest_person(self.people))
 
