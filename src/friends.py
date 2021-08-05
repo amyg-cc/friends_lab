@@ -19,7 +19,11 @@ def remove_friend(person, friend):
 
 def total_money(list):
     money_total = 0
-    
+
     for person in list:
         money_total += person["monies"]
     return money_total
+
+def lend_money(lender, lendee, amount):
+    lendee["monies"] += amount
+    lender["monies"] = lender["monies"] - amount
