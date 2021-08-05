@@ -42,3 +42,10 @@ def find_no_friends(list):
         if len(person["friends"]) == 0:
             no_mates.append(person)
     return no_mates
+
+def find_mutual_friends(person_1, person_2):
+    mutual_mates = []
+    for friend in person_1["friends"]:
+        if friend in person_2["friends"]:
+            mutual_mates.append(friend)
+    return mutual_mates

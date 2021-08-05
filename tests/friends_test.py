@@ -132,7 +132,6 @@ class TestFriends(unittest.TestCase):
     # 10. Given two people, find out which friends they have in common
     # (hint: use the in keyword to check if each of the friends appears in the other person's list of friends)
 
-    @unittest.skip("delete this line to run the test")
     def test_find_mutual_friends(self):
         self.assertEqual(["Velma", "Daphne"], find_mutual_friends(
             self.person1, self.person4))
